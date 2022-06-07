@@ -15,6 +15,10 @@ class Product{
         $this->image = $_image;
     }
 
+    function getBrand()
+    {
+        return $this->brand;
+    }
     function getName()
     {
         return $this->name;
@@ -28,7 +32,13 @@ class Product{
     {
         return $this->price;
     }
+    function getImage()
+    {
+        return $this->image;
+    }
     /////////////////////////////////////////
+
+    
     function setName($_name)
     {
         $this->name = $_name;

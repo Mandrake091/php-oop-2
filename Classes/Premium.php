@@ -17,7 +17,7 @@ class Premium extends User {
     }
     
     function setProdottiScontati($prodotto) {
-        $prodotto->setPrice($prodotto->getPrice()*0.2);
+        $prodotto->setPrice($prodotto->getPrice()*0.8);
         array_push($this->prodottiscontati, $prodotto);
     }
 
@@ -25,12 +25,10 @@ class Premium extends User {
     {
         $date = getdate()['year'];
         
-        if($_credit_card->getExpirationYear() > $date){
-            echo 'carta valida';
+        if($_credit_card->getExpirationYear() > $date){ 
             $this->credit_card = $_credit_card; 
         }else{
-            echo 'carta non valida';
         }
-       var_dump($date);
+      
     }
 }
