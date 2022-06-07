@@ -1,6 +1,6 @@
 <?php
 
-class User{
+class User {
     protected $nome;
     protected $cognome;
     protected $email;

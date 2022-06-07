@@ -33,6 +33,8 @@ class Product{
     {
         $this->name = $_name;
     }
-    
+    function setPrice($_price){
+        $this->price = $_price;
+    }  
 }
 ?>
